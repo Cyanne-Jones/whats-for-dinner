@@ -19,20 +19,24 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
-  height: 10%;
+  width: 70%;
+  height: 20%;
+}
+header > h1 {
+  font-size: 45px;
 }
 .tagline {
-  width: 500px;
+  width: 600px;
   overflow-wrap: anywhere;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 13%;
+  height: 20%;
   margin: 15px;
   padding: 5px;
+  font-size: 23px;
 }
 .boxes{
   width: 80%;
@@ -42,19 +46,24 @@ header {
   margin : 20px;
 }
 .looking-for-box {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
+h2 {
+  font-size: 35px;
+  padding: 10px;
+  margin: 15px;
+}
 .result-box {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 label {
-  font-size: 20px;
+  font-size: 30px;
 }
 button {
   background: rgba(212, 156, 28);
@@ -63,16 +72,22 @@ button {
   border-radius: 5px;
   margin: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   transition: background 0.8s ease-in-out;
   border: 0;
 }
 button:hover {
-
   background-color: #508c76;
 }
 
-
+.result-box {
+  font-size: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* font-family: 'Roboto', sans-serif;
 
 COLORS
