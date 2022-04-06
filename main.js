@@ -19,19 +19,19 @@ function showFood() {
   var foodType = getRadioValue();
 
   if (foodType === "side") {
-    resultBox.innerHTML = `<h3 class="decree">The Tome Decrees...</h3><h2 class="magic-result">You should make ${sides[getRandomNumber(sides)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${sides[getRandomNumber(sides)]}!</h2>`;
   } else if (foodType === "main-dish") {
-    resultBox.innerHTML = `<h3 class="decree">The Tome Decrees...</h3><h2 class="magic-result">You should make ${mains[getRandomNumber(mains)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${mains[getRandomNumber(mains)]}!</h2>`;
   } else if (foodType === "dessert") {
-    resultBox.innerHTML = `<h3 class="decree">The Tome Decrees...</h3><h2 class="magic-result">You should make ${desserts[getRandomNumber(desserts)]}!</h2>`;
-  } else {
-    resultBox.innerHTML = "oh no!";
+    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${desserts[getRandomNumber(desserts)]}!</h2>`;
+  } else if (foodType === "entire-meal"){
+    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3>
+    <h2 class="magic-result">You should make ${sides[getRandomNumber(sides)]} with ${mains[getRandomNumber(mains)]} and ${desserts[getRandomNumber(desserts)]}!</h2>`;
   }
 };
 
 function getRandomNumber(array) {
-  var num = Math.floor(Math.random(array.length))
-  return num;
+  return Math.floor(Math.random() * array.length)
 };
 
 var sides = [
@@ -41,7 +41,7 @@ var sides = [
 ];
 
 var mains = [
-  'Carnitas Burrito',
+  'Carnitas Burritos',
   'BBQ Ribs',
   'Sushi'
 ];
