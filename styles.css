@@ -1,13 +1,19 @@
 body {
   font-family: 'Redressed', sans-serif;
-  background-size: cover;
+  background-size: contain
+  background-repeat: no-repeat;
   text-align: center;
   background-image: url("./assets/shop.jpg");
+
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .purple-background {
   background: rgba(211, 164, 237, 0.8);
   border-radius: 25px;
@@ -26,12 +32,10 @@ header > h1 {
   font-size: 45px;
 }
 .tagline {
-  width: 600px;
+  width: 50%;
   overflow-wrap: anywhere;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   height: 20%;
   margin: 15px;
@@ -40,27 +44,33 @@ header > h1 {
 }
 .boxes{
   width: 80%;
-  display: flex;
+  height: 400px;
   justify-content: space-evenly;
 	align-items: center;
   margin : 20px;
 }
 .looking-for-box {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 10px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   padding: 10px;
-  margin: 15px;
+  overflow-wrap: anywhere;
 }
 .result-box {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 label {
   font-size: 30px;
@@ -73,26 +83,15 @@ button {
   margin: 10px;
   font-weight: bold;
   font-size: 25px;
-  transition: background 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   border: 0;
 }
 button:hover {
   background-color: #508c76;
   box-shadow: 0px 0px 20px #9bd1b0;
 }
-
-.result-box {
-  font-size: 40px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
 section > img {
   opacity: 60%;
-  padding: 50px;
-  margin: 200px;
   height: 50%;
   width: 50%;
 }
@@ -108,14 +107,23 @@ section > img {
 .magic-result:hover {
   background-color: rgba(199, 151, 192);
   box-shadow: 0px 0px 20px white;
-
 }
-/* font-family: 'Roboto', sans-serif;
 
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
+@media (min-width: 700px) {
 
-*/
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .boxes {
+    display: flex;
+  }
+  .looking-for-box {
+    margin-right: 15px;
+  }
+
+  .looking-for-box,
+  .result-box {
+    width: 50%;
+  }
+}
