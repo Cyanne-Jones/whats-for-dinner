@@ -1,22 +1,24 @@
 var letsCookButton = document.querySelector("#lets-cook-button");
 var resultBox = document.querySelector(".result-box");
 var radios = document.querySelectorAll('input[name="answer"]')
+var cookpotImage = document.querySelector("#cookpot");
 
 letsCookButton.addEventListener('click', showFood);
 
+function animate() {
+  cookpotImage.classList.add("rotate-animation");
+}
 
 function getRadioValue() {
-  event.preventDefault();
   for (var i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
       return radios[i].value;
     }
   }
 };
-function showFood() {
-  event.preventDefault()
-  var foodType = getRadioValue();
 
+function reassignResultHTML() {
+  var foodType = getRadioValue();
   if (foodType === "side") {
     resultBox.innerHTML = `<h3 class="decree">The <em>House Recipe Spell™</em> Decrees...</h3><h2 class="magic-result">✨You should make ${sides[getRandomNumber(sides)]}!✨</h2>`;
   } else if (foodType === "main-dish") {
@@ -28,6 +30,15 @@ function showFood() {
     <h2 class="magic-result">✨You should make ${sides[getRandomNumber(sides)]} with ${mains[getRandomNumber(mains)]} and ${desserts[getRandomNumber(desserts)]}!✨</h2>`;
   }
 };
+
+function showFood(event) {
+  event.preventDefault();
+  animate();
+  //reassignResultHTML();
+  setTimeout(reassignResultHTML, 3000);
+};
+
+
 
 function getRandomNumber(array) {
   return Math.floor(Math.random() * array.length)
