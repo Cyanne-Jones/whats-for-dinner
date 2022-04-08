@@ -101,10 +101,10 @@ section > img {
 
 @keyframes drive{
   from {
-    transform: translateX(0)
+    transform: rotate(0deg)
   }
   to {
-    transform: translateX(-200px)
+    transform: rotate(360deg);
   }
 }
 
