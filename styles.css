@@ -94,6 +94,18 @@ section > img {
   opacity: 60%;
   height: 50%;
   width: 50%;
+  animation-name: drive;
+  animation-duration: 3s;
+
+}
+
+@keyframes drive{
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-200px)
+  }
 }
 
 .decree {
