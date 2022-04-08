@@ -34,7 +34,6 @@ function reassignResultHTML() {
 function showFood(event) {
   event.preventDefault();
   animate();
-  //reassignResultHTML();
   setTimeout(reassignResultHTML, 3000);
 };
 
