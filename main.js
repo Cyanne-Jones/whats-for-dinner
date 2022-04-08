@@ -9,7 +9,6 @@ function getRadioValue() {
   event.preventDefault();
   for (var i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
-      resultBox.innerText = `${radios[i].value}`
       return radios[i].value;
     }
   }
@@ -19,14 +18,14 @@ function showFood() {
   var foodType = getRadioValue();
 
   if (foodType === "side") {
-    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${sides[getRandomNumber(sides)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The <em>House Recipe Spell™</em> Decrees...</h3><h2 class="magic-result">✨You should make ${sides[getRandomNumber(sides)]}!✨</h2>`;
   } else if (foodType === "main-dish") {
-    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${mains[getRandomNumber(mains)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The <em>House Recipe Spell™</em> Decrees...</h3><h2 class="magic-result">✨You should make ${mains[getRandomNumber(mains)]}!✨</h2>`;
   } else if (foodType === "dessert") {
-    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3><h2 class="magic-result">You should make ${desserts[getRandomNumber(desserts)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The <em>House Recipe Spell™</em> Decrees...</h3><h2 class="magic-result">✨You should make ${desserts[getRandomNumber(desserts)]}!✨</h2>`;
   } else if (foodType === "entire-meal"){
-    resultBox.innerHTML = `<h3 class="decree">The Spell Decrees...</h3>
-    <h2 class="magic-result">You should make ${sides[getRandomNumber(sides)]} with ${mains[getRandomNumber(mains)]} and ${desserts[getRandomNumber(desserts)]}!</h2>`;
+    resultBox.innerHTML = `<h3 class="decree">The <em>House Recipe Spell™</em> Decrees...</h3>
+    <h2 class="magic-result">✨You should make ${sides[getRandomNumber(sides)]} with ${mains[getRandomNumber(mains)]} and ${desserts[getRandomNumber(desserts)]}!✨</h2>`;
   }
 };
 
@@ -37,17 +36,59 @@ function getRandomNumber(array) {
 var sides = [
   'Chips & Guac',
   'Musubi',
-  'Roasted Brussels Sprouts'
+  'Roasted Brussels Sprouts',
+  'Miso Glazed Carrots',
+  'Miso Glazed Carrots',
+  'Miso Glazed Carrots',
+  'Crispy Potatoes',
+  'Sweet Potato Tots',
+  'Coconut Rice',
+  'Caesar Salad',
+  'Shrimp Summer Rolls',
+  'Garlic Butter Mushrooms',
+  'Hush Puppies'
 ];
 
 var mains = [
   'Carnitas Burritos',
   'BBQ Ribs',
-  'Sushi'
+  'Sushi',
+  'Spaghetti and Meatballs',
+  'Pineapple Chicken',
+  'Shakshuka',
+  'Thai Yellow Curry',
+  'Bibimbap',
+  'Chicken Parmesean',
+  'Butternut Squash Soup',
+  'BBQ Chicken Burgers',
+  'Ramen',
+  'Empanadas',
+  'Chicken Fried Rice',
+  'Sheet Pan Fajitas',
+  'Margarita Pizza',
+
 ];
 
 var desserts = [
   'Ice Cream',
   'Rice Crispy Treats',
-  'Tiramisu'
+  'Tiramisu',
+  'Apple Pie',
+  'Lemon Meringue Pie',
+  'Black Forest Cake',
+  'Banana Bread',
+  'Peach Cobbler',
+  'Cheesecake',
+  'Funfetti Cake',
+  'Baklava',
+  'Flan',
+  'Macarons',
+  'Macaroons',
+  'Chocolate Cupcakes',
+  'Pavlova',
+  'Pumpkin Pie',
+  'Key Lime Pie',
+  'Tart Tatin',
+  'Croissants',
+  'Eclairs'
 ];
