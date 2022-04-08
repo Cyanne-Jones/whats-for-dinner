@@ -1,23 +1,22 @@
-# What's for Dinner?
+#What's for Dinner?
+###Can't decide? Let ✨magic✨ decide for you!
 
-## Overview
+##Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+Welcome to Cyanne's Tome Shop of Recipes! In this *incredibly* niche bookshop, you can use our House Recipe Spell™ to figure out what to cook when you simply can't decide!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+To use this powerful tool, clone this repository to your computer and open up index.html in your web browser and get ready to cast some spells! This tool is even responsive to your different screen sizes for those pesky on-the-go dinner decisions.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+###Is it *really** magic?
 
-## Learning Goals
+Absolutely not, but it sure does feel like it! This project was made using vanilla JavaScript, HTML and CSS in 2022 by Cyanne Jones. You can access my GitHub [here](https://github.com/Cyanne-Jones)!
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
 
-## Setup
+###Future ideas for this project:
+- I think adding photos of the food items might be fun to really make it pop.
+- A little sprite animation of a witch stirring the cook pot would be so so cute! Maybe a little pixel art witch!
+- Twinkle sound effects upon spell cast???
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+####Additional Credits!
+- Font is ["Redressed"](https://www.cdnfonts.com/redressed.font) by Cameral Dias
+- 
