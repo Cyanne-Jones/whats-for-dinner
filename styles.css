@@ -94,17 +94,19 @@ section > img {
   opacity: 60%;
   height: 50%;
   width: 50%;
-  animation-name: drive;
-  animation-duration: 3s;
-
 }
 
-@keyframes drive{
+.rotate-animation {
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+
+@keyframes rotate{
   from {
     transform: rotate(0deg)
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 
@@ -112,6 +114,7 @@ section > img {
   font-size: 30px;
 }
 .magic-result {
+  width: 75%;
   background: rgba(212, 156, 28);
   border-radius: 25px;
   transition: background 0.8s ease-in-out;
